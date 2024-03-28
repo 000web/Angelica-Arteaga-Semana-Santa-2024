@@ -268,7 +268,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    background-color: red;
+    background-color: #ef8b8b;
     border-radius: 50%;
     color: white;
     font-weight: bolder;
@@ -307,7 +307,7 @@
     margin-top: 1rem;
 }
 .code{
-    color: red;
+    color: #ef8b8b;
     font-weight: bolder;
 }
 #discount_button{
@@ -340,7 +340,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
-    background-color: red;
+    background-color: #ef8b8b;
     color: #ffffff;
     font-size: 1.5rem;
     padding: 1rem;
