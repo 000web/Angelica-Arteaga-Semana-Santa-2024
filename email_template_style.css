@@ -1,0 +1,249 @@
+/* IMPORTANT FOR MOBILE VISUALIZATION */
+@-o-viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0
+}
+/* END IMPORTANT FOR MOBILE VISUALIZATION */
+
+/* ALL ELEMENTS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    /*border: 1px solid #059870;*/
+}
+/* END ALL ELEMENTS */
+
+/* GLOBAL GRID ORGANIZATION */
+#email_template_website{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+    grid-template-areas:
+    'email_template_header'
+    'email_template_content'
+    'email_template_footer';
+}
+#email_template_header{grid-area: email_template_header;}
+#email_template_content{grid-area: email_template_content;}
+#email_template_footer{grid-area: email_template_footer;}
+/* END GLOBAL GRID ORGANIZATION */
+
+/* ALL GLOBAL GRID BLOCKS */
+.template_block{
+    width: 100%;
+}
+/* END ALL GLOBAL GRID BLOCKS */
+
+/* BLOCK 1: HEADER */
+#email_template_header{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+/* END BLOCK 1: HEADER */
+
+/* BLOCK 2: CONTENT */
+#email_template_content{
+    background-color: #ffffff;
+}
+/* END BLOCK 2: CONTENT */
+
+/* BLOCK 3: FOOTER */
+#email_template_footer{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    width: 100%;
+}
+/* END BLOCK 3: FOOTER */
+
+/* LOGO Image: In Header and Footer */
+.logo{
+    width: 250px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.9);
+    padding: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+/* Footer A: LOGO Image Container */
+.footer_a{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+}
+/* Footer B: Social Media Icons: Facebook/Instagram/WhatsApp/Website */
+.footer_b{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* Footer C: Absolute Website Bootom */
+.footer_c{
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(0,0,0,0.9);
+    color: #e1e1e1;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+/* Pink line below Angelica & Arteaga Absolute Bottom Button */
+.bottom_line{
+    border-bottom: 2px solid #ef8b8b;
+}
+
+/* Social Icons */
+.footer_b>a{
+    text-decoration: none;
+    background-color: rgba(0,0,0,0.9);
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_c>p{
+    cursor: pointer;
+}
+
+/* CUSTOM CONTENT -------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+#email_template_content{
+    display: grid;
+    /*grid-template-columns: 0.4fr 0.6fr;*/
+    grid-gap: 0rem;
+    grid-template-areas:
+    'discount_percentage discount_text'
+    'discount_text_2 discount_text_2'
+    'discount_text_3 discount_text_3'
+    'discount_text_4 discount_text_4'
+    'discount_text_5 discount_text_5'
+    'discount_text_6 discount_text_6'
+    'discount_button discount_button';
+}
+#discount_percentage{grid-area: discount_percentage;}
+#discount_text{grid-area: discount_text;}
+#discount_text_2{grid-area: discount_text_2;}
+#discount_text_3{grid-area: discount_text_3;}
+#discount_text_4{grid-area: discount_text_4;}
+#discount_text_5{grid-area: discount_text_5;}
+#discount_text_6{grid-area: discount_text_6;}
+#discount_button{grid-area: discount_button;}
+/*
+#email_template_content>div{
+    padding: 1rem;
+}
+*/
+#discount_percentage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#discount_percentage>p{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+#discount_text, #discount_text_2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#discount_text>h2{
+    text-align: justify;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#discount_text>p, #discount_text_2, #discount_text_3, #discount_text_4, #discount_text_5, #discount_text_6, #discount_button{
+    text-align: justify;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+#discount_text_2{
+    margin-top: 1rem;
+}
+.code{
+    color: red;
+    font-weight: bolder;
+}
+#discount_button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#discount_button>button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: red;
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+#discount_button>button:hover{
+    cursor: pointer;
+}
+/* ----------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* CUSTOM CONTENT -------------------------------------------------- */
